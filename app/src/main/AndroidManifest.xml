@@ -11,8 +11,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IIITDMessApp"
         tools:targetApi="31">
+        <activity android:name=".DashboardAdminActivity"/>
+        <activity android:name=".TermsAdminActivity"/>
+        <activity android:name=".DashboardUserActivity"/>
+        <activity android:name=".TermsUserActivity"/>
         <activity
-            android:name=".MainActivity"
+            android:name=".WelcomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
