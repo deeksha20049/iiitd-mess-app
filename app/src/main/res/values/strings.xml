@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">IIITD Mess App</string>
+    <string name="register">REGISTER</string>
+    <string name="buy_coupons">Buy Coupons</string>
 </resources>

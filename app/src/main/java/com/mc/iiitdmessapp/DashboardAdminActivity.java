@@ -16,9 +16,16 @@ public class DashboardAdminActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_dashboard_admin);
+
+        HomeAdminFragment homeAdminFragment = new HomeAdminFragment();
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.frameContainer, homeAdminFragment);
+        fragmentTransaction.commit();
+
         menuButton = (ImageButton) findViewById(R.id.menuButton);
         homeButton = (ImageButton) findViewById(R.id.homeButton);
         profileButton = (ImageButton) findViewById(R.id.profileButton);
+
         homeButton.setBackgroundResource(R.color.black);
         homeButton.setImageResource(R.drawable.home_white);
         menuButton.setBackgroundResource(R.color.white);
