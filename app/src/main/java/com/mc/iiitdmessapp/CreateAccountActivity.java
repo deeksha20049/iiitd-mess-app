@@ -7,30 +7,24 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class WelcomeActivity extends AppCompatActivity {
+public class CreateAccountActivity extends AppCompatActivity {
 
-    Button user_button, admin_button;
+    Button signup_button, login_button;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getSupportActionBar().hide();
-        setContentView(R.layout.activity_welcome);
-
-        user_button = findViewById(R.id.user_button);
+        setContentView(R.layout.activity_create_account);
+        signup_button = findViewById(R.id.signup_button);
 
 
-        user_button.setOnClickListener(new View.OnClickListener() {
+        signup_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(WelcomeActivity.this, TermsUserActivity.class);
+                Intent intent = new Intent(CreateAccountActivity.this, SignUpActivity.class);
                 startActivity(intent);
             }
         });
-
-
-
-
     }
 }
