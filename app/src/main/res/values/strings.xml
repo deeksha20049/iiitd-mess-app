@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">IIITD Mess App</string>
+    <string name="terms_of_use_for_admin">Terms of Use for Admin</string>
+    <string name="i_accept">I accept</string>
+    <string name="terms_of_use_for_user">Terms of Use for User</string>
     <string name="register">REGISTER</string>
     <string name="buy_coupons">Buy Coupons</string>
 </resources>
