@@ -9,16 +9,18 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class TermsUserActivity extends AppCompatActivity {
-    Button acpt;
+
+    Button agree_button;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_terms_user);
-        acpt = (Button) findViewById(R.id.termsUserBtn);
-        acpt.setOnClickListener(new View.OnClickListener() {
+        agree_button = findViewById(R.id.agree_button);
+
+        agree_button.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 Intent intent = new Intent(TermsUserActivity.this, DashboardUserActivity.class);
                 startActivity(intent);
             }

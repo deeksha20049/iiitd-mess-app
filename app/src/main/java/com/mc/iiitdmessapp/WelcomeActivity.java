@@ -8,28 +8,40 @@ import android.view.View;
 import android.widget.Button;
 
 public class WelcomeActivity extends AppCompatActivity {
-    Button userLoginBtn, adminLoginBtn;
+
+    Button user_button, admin_button;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_welcome);
-        userLoginBtn = (Button) findViewById(R.id.userLoginBtn);
-        userLoginBtn.setOnClickListener(new View.OnClickListener() {
+
+        user_button = findViewById(R.id.user_button);
+
+
+        user_button.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 Intent intent = new Intent(WelcomeActivity.this, TermsUserActivity.class);
                 startActivity(intent);
             }
         });
-        adminLoginBtn = (Button) findViewById(R.id.adminLoginBtn);
-        adminLoginBtn.setOnClickListener(new View.OnClickListener() {
+
+        admin_button = findViewById(R.id.admin_button);
+
+
+        admin_button.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 Intent intent = new Intent(WelcomeActivity.this, TermsAdminActivity.class);
                 startActivity(intent);
             }
         });
+
+
+
+
     }
 }

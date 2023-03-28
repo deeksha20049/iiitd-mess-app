@@ -9,16 +9,18 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class TermsAdminActivity extends AppCompatActivity {
-    Button acpt;
+
+    Button agree_button;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_terms_admin);
-        acpt = (Button) findViewById(R.id.termsAdminBtn);
-        acpt.setOnClickListener(new View.OnClickListener() {
+        agree_button = findViewById(R.id.agree_button_admin);
+
+        agree_button.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 Intent intent = new Intent(TermsAdminActivity.this, DashboardAdminActivity.class);
                 startActivity(intent);
             }
