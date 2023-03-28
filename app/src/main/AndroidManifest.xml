@@ -14,12 +14,6 @@
         <activity
             android:name=".CreateAccountActivity"
             android:exported="false" />
-        <activity
-            android:name=".LoginActivity"
-            android:exported="false" />
-        <activity
-            android:name=".SignUpActivity"
-            android:exported="false" />
         <activity android:name=".DashboardAdminActivity" />
         <activity android:name=".TermsAdminActivity" />
         <activity android:name=".DashboardUserActivity" />
