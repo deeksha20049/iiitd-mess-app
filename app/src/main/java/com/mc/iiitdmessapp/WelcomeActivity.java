@@ -29,6 +29,17 @@ public class WelcomeActivity extends AppCompatActivity {
             }
         });
 
+        admin_button = findViewById(R.id.admin_button);
+
+
+        admin_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(WelcomeActivity.this, TermsAdminActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
 
 
