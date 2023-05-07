@@ -40,7 +40,7 @@
             android:layout_weight="1"
             android:background="@drawable/border_spinner"
             android:backgroundTint="@color/grey"
-            android:text="@string/register" />
+            />
 
     </LinearLayout>
 
@@ -119,7 +119,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/border_spinner"
-        android:text="@string/buy_coupons" />
+         />
 
     <LinearLayout
         android:id="@+id/couponsLayout"
