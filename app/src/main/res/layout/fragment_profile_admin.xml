@@ -1,29 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@android:color/white"
-    android:layout_height="match_parent">
+    android:padding="10dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
 
     <ImageView
-        android:id="@+id/logo"
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_gravity="center_horizontal"
-        android:src="@drawable/logo" />
+        android:layout_height="101dp"
+        app:srcCompat="@drawable/logo" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text=""></TextView>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text=""></TextView>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text=""></TextView>
     <ImageView
         android:id="@+id/profpic"
         android:layout_width="match_parent"
@@ -32,13 +25,11 @@
         android:src="@drawable/my_profile_picture" />
 
     <TextView
+        android:id="@+id/profileName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="PROFILE"
-        android:textColor="@color/black"
-        android:textSize="30dp">
-
-    </TextView>
+        android:textAlignment="center"
+        android:text="TextView" />
 
     <Button
         android:id="@+id/logout_button"

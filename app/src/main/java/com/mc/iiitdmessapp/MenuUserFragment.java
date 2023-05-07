@@ -23,22 +23,22 @@ public class MenuUserFragment extends Fragment {
         dayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         daySpinner.setAdapter(dayAdapter);
 
-        Spinner breakfastSpinner = view.findViewById(R.id.breakfast_spinner);
-        ArrayAdapter<CharSequence> mealAdapter = ArrayAdapter.createFromResource(view.getContext(), R.array.meal_types, android.R.layout.simple_spinner_item);
-        mealAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        breakfastSpinner.setAdapter(mealAdapter);
-
-        Spinner lunchSpinner = view.findViewById(R.id.lunch_spinner);
-        lunchSpinner.setAdapter(mealAdapter);
-
-        Spinner dinnerSpinner = view.findViewById(R.id.dinner_spinner);
-        dinnerSpinner.setAdapter(mealAdapter);
+//        Spinner breakfastSpinner = view.findViewById(R.id.breakfast_spinner);
+//        ArrayAdapter<CharSequence> mealAdapter = ArrayAdapter.createFromResource(view.getContext(), R.array.meal_types, android.R.layout.simple_spinner_item);
+//        mealAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+//        breakfastSpinner.setAdapter(mealAdapter);
+//
+//        Spinner lunchSpinner = view.findViewById(R.id.lunch_spinner);
+//        lunchSpinner.setAdapter(mealAdapter);
+//
+//        Spinner dinnerSpinner = view.findViewById(R.id.dinner_spinner);
+//        dinnerSpinner.setAdapter(mealAdapter);
 
         // Set default selection for meal spinners
-        int idliIndex = mealAdapter.getPosition("Idli");
-        breakfastSpinner.setSelection(idliIndex);
-        lunchSpinner.setSelection(idliIndex);
-        dinnerSpinner.setSelection(idliIndex);
+//        int idliIndex = mealAdapter.getPosition("Idli");
+//        breakfastSpinner.setSelection(idliIndex);
+//        lunchSpinner.setSelection(idliIndex);
+//        dinnerSpinner.setSelection(idliIndex);
 
 
 
