@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">IIITD Mess App</string>
+    <string-array name="meal_types">
+        <item>Dosa</item>
+        <item>Idli</item>
+        <item>Puri</item>
+        <item>Paratha</item>
+        <item>Chapati</item>
+        <item>Pulao</item>
+        <item>Biryani</item>
+    </string-array>
+
+    <string-array name="days_of_week">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+
 </resources>

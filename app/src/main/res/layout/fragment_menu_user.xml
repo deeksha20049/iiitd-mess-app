@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
 
         android:layout_height="wrap_content"
-        android:text="Select Day of the Week"/>
+        android:text="Day of the Week"/>
 
     <Spinner
         android:id="@+id/day_spinner"
@@ -26,36 +26,36 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
-        android:text="Select Breakfast"/>
-
-    <Spinner
-        android:id="@+id/breakfast_spinner"
-        android:layout_width="match_parent"
-
-        android:layout_height="wrap_content"/>
+        android:text="Breakfast"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
-        android:text="Select Lunch"/>
-
-    <Spinner
-        android:id="@+id/lunch_spinner"
-        android:layout_width="match_parent"
-
-        android:layout_height="wrap_content"/>
+        android:text="Idli"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
-        android:text="Select Dinner"/>
+        android:text="Lunch"/>
 
-    <Spinner
-        android:id="@+id/dinner_spinner"
+    <TextView
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
 
-        android:layout_height="wrap_content"/>
+        android:text="Idli"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Dinner"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Idli"/>
+
 
 </LinearLayout>
